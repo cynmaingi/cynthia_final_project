@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relearn Bot – Crash That Test!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #e6f0ff, #ffffff);
+      color: #003366;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin: 0;
+    }
+
+    header p {
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flashcard {
+      width: 360px;
+      height: 220px;
+      perspective: 1000px;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      cursor: pointer;
+    }
+
+    .flashcard:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front,
+    .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border: 2px solid #003366;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-front {
+      font-size: 1.1rem;
+    }
+
+    .card-back {
+      transform: rotateY(180deg);
+      background-color: #e6f0ff;
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: #e6f0ff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Relearn Bot</h1>
+    <p>Crash That Test! Make KCSE look easy — one smart revision at a time.</p>
+  </header>
+
+  <main>
+    <div class="flashcard">
+      <div class="card-inner">
+        <div class="card-front">
+          <strong>KCSE Biology:</strong><br />
+          What is the function of the mitochondria in a cell?
+        </div>
+        <div class="card-back">
+          <strong>Answer:</strong><br />
+          The mitochondria is the powerhouse of the cell — it produces energy through respiration.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Relearn Bot – Empowering KCSE learners with AI-driven revision
+  </footer>
+</body>
+</html>
